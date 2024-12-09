@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.btn-animado {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.btn-animado:hover {
+    background-color: #45a049; /* Cambiar a un verde más oscuro */
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+}
+
+.mensaje-oculto {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.mensaje-visible {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
